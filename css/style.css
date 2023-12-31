@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #26044a;
+    --primary-shades: #1e033b;
+    --para-color: #7c5e9c;
+    --helper-color: #3c1d5c;
+    --white: #fff;
+    --bg-color: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:active,
+a:active {
+    color: var(--primary-color);
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    border-bottom: 0.3rem solid var(--white);
+}
+
+li:hover {
+    border-bottom: 0.3rem solid var(--primary-color);
+    transition: all 0.5s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-color);
+}
+
+.para {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--para-color);
+}
+
+/*--------------------------------
+ header and navbar style start 
+ <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+.header {
+    height: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13.6rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo .logo-icon {
+    font-size: 4rem;
+    position: relative;
+}
+
+.logo .logo-text {
+    top: -1.3rem;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    font-size: 1.5rem;
+}
+
+.navbar-list .navbar-btn {
+    padding: 1.2rem 2.4rem;
+    background-color: var(--white);
+    border: 1px solid var(--helper-color);
+    color: var(--helper-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-list .navbar-link:hover,
+.navbar-list .navbar-link:active {
+    color: var(--helper-color);
+}
+
+.navbar-btn:hover,
+.navbar-btn:active {
+    background-color: var(--helper-color);
+    color: var(--white);
+}
+
+.navbar-link {
+    text-transform: uppercase;
+}
+
+.mobile-nav-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.mobile-navbar-btn {
+    display: none;
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+}
+
+/* resuable code  */
+main {
+    padding: 0.6 0 6.6rem 0;
+}
+
+.section {
+    padding: 4.6rem 0;
+}
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem 6.4rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1.6rem 3.2rem;
+    transition: all 0.2s linear;
+    background-color: var(--helper-color);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn:hover,
+.btn:active {
+    transform: scale(1.05);
+    background-color: var(--white);
+    color: var(--helper-color);
+}
+
+.send-message-btn:hover {
+    border: 1px solid var(--helper-color);
+}
+
+/*--------------------------------
+ hero section style start 
+ <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+
+.section-hero {
+    position: relative;
+    background-color: var(--helper-color);
+}
+
+.section-hero::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 9.6rem;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    background: var(--bg-color);
+    z-index: -1;
+}
+
+.primary-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.section-about .primary-heading,
+.section-service .primary-heading,
+.section-contact .primary-heading {
+    color: var(--helper-color);
+}
+
+.about-container {
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem
+}
+
+.about-container .para {
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.section-hero .para {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+    color: var(--bg-color);
+}
+
+.hero-icons {
+    margin-top: 4.2rem;
+}
+
+.hero-icons .icon {
+    font-size: 6rem;
+    position: relative;
+    color: var(--bg-color);
+}
+
+.hero-icons .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    background-color: var(--para-color);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.hero-icons h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+}
+
+.section-hero .hero-icon-style .para {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    /* background-color: var(--primary-shades); */
+}
+
+.hero-image img {
+    height: 90%;
+    /* box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1); */
+}
+
+.hero-img-overlay {
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    background-color: var(--primary-color);
+    padding: 4rem;
+    box-shadow: 0 0 10rem 0 rgba(38, 4, 74, 0.6);
+}
+
+.hero-img-overlay .para {
+    color: var(--white);
+}
+
+.hero-img-overlay .para:nth-child(2) {
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-img-overlay .para:last-child {
+    margin: 0;
+}
+
+.service-card {
+    margin-top: 2.1rem;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+    text-align: -webkit-auto;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+}
+
+.service-card .service-card-cover {
+    -webkit-clip-path: polygon(calc(100% - 70px) 0, 100% 70px, 100% 100%, 70px 100%, 0% calc(100% - 70px), 0 0);
+    clip-path: polygon(calc(100% - 70px) 0, 100% 70px, 100% 100%, 70px 100%, 0% calc(100% - 70px), 0 0);
+}
+
+.service-card .icon {
+    font-size: 6rem;
+    position: relative;
+}
+
+.service-card .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    /* background-color: var(--helper-color); */
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.service-card h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.service-card h2 a {
+    color: var(--primary-color);
+}
+
+.service-card .hero-icon-style .para {
+    line-height: 1.6;
+    font-family: 1.4rem;
+    margin: 0;
+}
+
+.section-about {
+    text-align: justify;
+}
+
+.section-contact {
+    font-size: 1.6rem;
+}
+
+.section-contact .contact-content {
+    padding-top: 2.8rem;
+    text-align: justify;
+
+}
+
+.section-contact .contact-content .para {
+    margin-bottom: 2.8rem;
+}
+
+.section-contact .contact-content .para-special {
+    font-weight: bold;
+}
+
+.section-contact .form-container {
+    padding: 5rem;
+    box-shadow: 1rem 1rem 10rem 0 rgba(38, 4, 74, 0.6);
+}
+
+.section-contact input[type=text],
+.section-contact select,
+.section-contact textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.grid-one-two-column {
+    grid-template-columns: repeat(2, 1fr, 2fr);
+}
+
+.copy-rigth {
+    /* text-align: right; */
+    padding: 1.4rem 0;
+    font-weight: bold;
+}
+
+.section-standard-navigation {
+    color: var(--white);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.section-standard-navigation .footer-content {
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+.footer-top.container.grid.grid-two-column {
+    padding: 4rem 0 2.5rem 0;
+}
+
+.footer-content .logo {
+    color: var(--white);
+}
+
+.footer-content .social-content,
+.footer-content .contact-details {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.footer-content .social-content p {
+    margin-top: 1rem;
+}
+
+.footer-content .contact-wrap {
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    color: var(--white);
+}
+
+.footer-content .contact-wrap ion-icon {
+    font-size: 2.5rem;
+}
+
+.footer-content .contact-wrap span {
+    display: inline-block;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+/*--------------------------------
+  media queries style start 
+  <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+
+@media (max-width: 1250px) {
+    .header {
+        padding: 0 6rem;
+    }
+
+    .container {
+        padding: 0 6rem;
+    }
+
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 980px) {
+    .container {
+        max-width: 96rem;
+    }
+
+    .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero .hero-icons .grid-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-three-column {
+        grid-template-columns: 1fr 1fr;
+        gap: 7.2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--primary-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+    }
+
+    .navbar .navbar-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .navbar-link {
+        color: var(--white);
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 9999;
+    }
+
+    .active .navbar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+        z-index: 999;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+        display: block;
+        color: var(--white);
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+        display: none;
+        color: var(--white);
+    }
+
+    .section::before {
+        height: 30%;
+    }
+
+    .service-card {
+        margin-top: 1.05rem;
+        padding: 2rem 0.75rem;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+
+    .hero-image .hero-img-overlay {
+        width: 80%;
+        left: 0;
+    }
+
+    .section-contact .form-container {
+        padding: 1.2rem;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .grid-three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+
+    .hero-image .hero-img-overlay {
+        width: 90%;
+        left: 0;
+    }
+
+    .copy-rigth {
+        text-align: center;
+    }
+}
