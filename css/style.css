@@ -202,12 +202,12 @@ main {
  link:https://www.youtube.com/thapatechnical -->
 ------------------------- */
 
-.section-hero {
+.home {
     position: relative;
     background-color: var(--helper-color);
 }
 
-.section-hero::before {
+.home::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -241,7 +241,7 @@ main {
     margin-bottom: 1.2rem;
 }
 
-.section-hero .para {
+.home .para {
     margin-top: 2rem;
     margin-bottom: 3.2rem;
     color: var(--bg-color);
@@ -276,7 +276,7 @@ main {
     color: var(--white);
 }
 
-.section-hero .hero-icon-style .para {
+.home .hero-icon-style .para {
     line-height: 1.6;
     font-size: 1.4rem;
     margin: 0;
@@ -500,7 +500,7 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .section-hero .hero-icons .grid-two-column {
+    .home .hero-icons .grid-two-column {
         grid-template-columns: 1fr 1fr;
     }
 
