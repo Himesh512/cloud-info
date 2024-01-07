@@ -10,3 +10,14 @@ mobileNav.addEventListener("click", () => toggleNavBar());
 navAnchors.forEach((aEl) => {
     aEl.addEventListener("click", () => toggleNavBar());
 });
+
+
+$(window).on("scroll", function() {
+    const screenHeight = window.screen.height - 200;
+    if ($(window).scrollTop() > screenHeight) {
+        $(".header").addClass("scrolled");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $(".header").removeClass("scrolled");
+    }
+});
