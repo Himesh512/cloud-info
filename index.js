@@ -3,7 +3,9 @@ const navHeader = document.querySelector(".header");
 const navAnchors = document.querySelectorAll(".navbar-list a")
 
 const toggleNavBar = () => {
-    navHeader.classList.toggle("active");
+    if (window.screen.availWidth < 980) {
+        navHeader.classList.toggle("active");
+    }
 }
 mobileNav.addEventListener("click", () => toggleNavBar());
 
