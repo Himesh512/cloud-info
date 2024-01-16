@@ -235,7 +235,7 @@
         color: var(--helper-color);
     }
     
-    .send-message-btn:hover {
+    #send-message-btn:hover {
         border: 1px solid var(--helper-color);
     }
     /*--------------------------------
@@ -448,6 +448,7 @@
     }
     
     .section-contact input[type=text],
+    .section-contact input[type=email],
     .section-contact select,
     .section-contact textarea {
         width: 100%;

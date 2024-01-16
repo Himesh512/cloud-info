@@ -14,7 +14,7 @@ navAnchors.forEach((aEl) => {
 });
 
 
-$(window).on("scroll", function() {
+$(window).on("scroll", function (event) {
     const screenHeight = window.screen.height - 200;
     if ($(window).scrollTop() > screenHeight) {
         $(".header").addClass("scrolled");
@@ -23,3 +23,31 @@ $(window).on("scroll", function() {
         $(".header").removeClass("scrolled");
     }
 });
+
+const getContent = (formData) => {
+    return "Testing";
+};
+
+const submitInquiryForm = () => {
+    const formData = document.getElementById("contact-form");
+
+    if (!formData.checkValidity()) {
+        alert("Please fill up Mendatory data...!")
+    }
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "info@skydocktech.com",
+        Password: "BBBE45B950A1DF19A682ABAA8AFC7287CBF6",
+        To: 'info@skydocktech.com',
+        From: "query@skydocktech.com",
+        Subject: "New Inquiry",
+        Body: getContent(formData)
+    }).then(
+        message => alert(message)
+    );
+};
+
+
+const submitBtn = document.getElementById('send-message-btn');
+submitBtn.addEventListener("click", () => submitInquiryForm());

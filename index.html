@@ -227,13 +227,16 @@
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your name." required>
 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email." required>
+
                             <label for="number">Number</label>
                             <input type="text" id="number" name="number" placeholder="Your Number." required>
 
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something." required rows="5"></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write something." required rows="5"></textarea>
 
-                            <a href="#" type="submit" class="btn send-message-btn">Send Message</a>
+                            <a href="javascript:void(0)" type="submit" class="btn" id="send-message-btn">Send Message</a>
                         </form>
                     </div>
                 </div>
@@ -274,6 +277,7 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
