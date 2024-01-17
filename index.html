@@ -1,287 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyDock</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Skydock</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
 
-<body>
-    <header id="header" class="header">
-        <a href="#" target="_self" class="logo">
-            <ion-icon name="cloud-circle-outline" class="logo-icon"></ion-icon>
-            <span class="logo-text">SkyDock</span>
-        </a>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#home" class="navbar-link"> Home </a></li>
-                <li><a href="#about" class="navbar-link"> About Us</a></li>
-                <li><a href="#service" class="navbar-link"> Services </a></li>
-                <li><a href="#contact" class="btn navbar-btn">Let's talk</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-navbar-btn">
-            <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
-            <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
-        </div>
-    </header>
-
-    <main>
-        <section class="section home" id="home">
-            <div class="container grid grid-two-column">
-                <div class="hero-data">
-                    <h1 class="primary-heading">Embark on your cloud journey with SkyDock.</h1>
-                    <p class="para">Gain the essential cloud knowledge to revolutionize your business. Utilize a team management approach to accomplish efficient, straightforward, and top-notch solutions.</p>
-                    <!-- <a href="#" target="_self" class="btn">Get Started</a> -->
-
-                    <!-- <div class="hero-icons">
-                        <div class="grid grid-two-column">
-                            <div class="hero-icon-style">
-                                <ion-icon name="logo-react" class="icon"></ion-icon>
-                                <h2>Write Code</h2>
-                                <p class="para">
-                                    Far far away, behind the word mountains, far from the countries
-                                </p>
-                            </div>
-                            <div class="hero-icon-style">
-                                <ion-icon name="code-slash" class="icon"></ion-icon>
-                                <h2>Learn Code</h2>
-                                <p class="para">
-                                    Far far away, behind the word mountains, far from the countries
-                                </p>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- right side hero section  -->
-                <div class="hero-image">
-                    <img src="images/cloud operations.png" alt="we love coding and want to learn coding" class="image" />
-                    <!-- <div class="hero-img-overlay">
-                        <p class="para">
-                            “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.”
-                        </p>
-                        <p class="para">Thapa Technical</p>
-                        <p class="para">Mern Stack Developer</p>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-about" id="about">
-            <div class="container about-container">
-                <h1 class="primary-heading">About Us</h1>
-                <p class="para">We are a dedicated team of cloud technology experts, passionate about navigating the cutting edge of technological innovation. Our collective expertise empowers us to deliver top-tier solutions and insights in the dynamic realm of cloud
-                    technologies. Explore with us as we leverage our proficiency to drive your digital endeavours to new heights.</p>
-            </div>
-        </section>
-
-        <section class="section section-service" id="service">
-            <div class="container grid">
-                <h1 class="primary-heading">Services</h1>
-            </div>
-
-            <div class="container grid grid-three-column">
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="cloud-upload-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Cloud Migration</a>
-                        </h2>
-
-                        <p class="para">
-                            Transition your business operations to the cloud and unlock the potential for transformative technologies like advanced data analytics, machine learning, and artificial intelligence.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="construct-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Platform Modernization
-                            </a>
-                        </h2>
-
-                        <p class="para">Unlock the full potential of the AWS cloud platform with four key modernization strategies: Refactoring, Containerization, Serverless computing, and DevOps.</p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="rocket-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Architecting on cloud </a>
-                        </h2>
-
-                        <p class="para">Unleash the complete capabilities of the AWS cloud platform by employing four essential modernization strategies: Refactoring, Containerization, Serverless computing, and DevOps.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="contract-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Containerization </a>
-                        </h2>
-
-                        <p class="para">Achieve scalability, portability, and fault tolerance by containerizing your applications with SkyDock.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="git-compare-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Serverless Computing</a>
-                        </h2>
-
-                        <p class="para">We architect serverless applications in order to deliver a better product and get it to market faster, accelerate rates of iteration for new features, and continually optimize costs.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
-
-                        <h2 class="" id="h-devops-security">
-                            <a href="javascript:void(0)">DevOps & Security </a>
-                        </h2>
-
-                        <p class="para">Accelerate product delivery and enhance quality by integrating your software development and IT operations teams through automated processes, enhanced communication, and streamlined workflows.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="medical-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Kubernetes</a>
-                        </h2>
-
-                        <p class="para">With a wealth of experience, our team, comprised of Certified Kubernetes Administrators (CKA), excels in designing and overseeing various Kubernetes environments. Our focus lies in providing customized, highly secure Kubernetes
-                            clusters through our distinctive cluster design.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="business-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Infrastructure as Code</a>
-                        </h2>
-
-                        <p class="para">Our team of Terraform consulting specialists can assist you in: Utilize Terraform Infrastructure as Code to provision new infrastructure, employing HCL (HashiCorp Configuration Language) as its sophisticated high-level configuration
-                            language. Leverage Terraform consultants to automate your diverse infrastructure requirements, ensuring optimal performance and cost-effectiveness.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="hero-icon-style">
-                        <ion-icon class="icon" name="calculator-outline"></ion-icon>
-
-                        <h2 class="">
-                            <a href="javascript:void(0)">Cloud Cost Optimization</a>
-                        </h2>
-
-                        <p class="para">SkyDock assists in examining your cloud expenses to pinpoint chances for enhancing efficiencies in computing, data, networking, and other cost-driving factors.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-contact" id="contact">
-            <div class="container">
-                <h1 class="primary-heading">Let's talk</h1>
-            </div>
-            <div class="container grid grid-two-column">
-                <div class="contact-content">
-                    <p class="para">Looking to create a new cloud application? Or do you need to migrate and modernize your legacy software to the cloud? Through our partnership with AWS, we bring the expertise, the process-driven approach, and the dedication needed
-                        to build things right, right now and we’d love to hear from you.</p>
-
-                    <p class="para para-special">To get the conversation started, introduce yourself..!</p>
-
-                    <p class="para">Tell us a little bit about your company and what you need help with, and we’ll get back to you as soon as possible.</p>
-                </div>
-
-
-                <div class="form-content">
-                    <div class="form-container">
-                        <form id="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name." required>
-
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email." required>
-
-                            <label for="number">Number</label>
-                            <input type="text" id="number" name="number" placeholder="Your Number." required>
-
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write something." required rows="5"></textarea>
-
-                            <a href="javascript:void(0)" type="submit" class="btn" id="send-message-btn">Send Message</a>
-                        </form>
-                    </div>
-                </div>
-        </section>
-    </main>
-
-    <footer id="footer" class="footer section-standard-navigation">
-        <div class="footer-top container grid grid-two-column">
-            <div class="footer-content">
-                <!-- <a href="#" target="_self" class="contact-wrap">
-                    <ion-icon name="cloud-circle-outline" class="logo-icon"></ion-icon>
-                    <span class="logo-text">Baba Cloud</span>
-                </a> -->
-
-                <a href="https://www.linkedin.com/in/aarshvb/" target="_blank" class="contact-wrap">
-                    <ion-icon class="linked-in" name="logo-linkedin"></ion-icon>
-                    <span class="">Let’s Connect.</span>
-                </a>
-
-                <a href="https://wa.me/9712095676" target="_blank" class="contact-wrap">
-                    <ion-icon name="call-outline" class="tele-icon"></ion-icon>
-                    <span class="">+91-9712095676</span>
-                </a>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#service">Services</a>
-                        <a href="#contact">Let's talk</a>
-                    </li>
+    <body>
+        <header id="header" class="header">
+            <a href="#" target="_self" class="logo">
+                <ion-icon name="cloud-circle-outline"
+                    class="logo-icon"></ion-icon>
+                <span class="logo-text">Skydock</span>
+            </a>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link"> Home </a></li>
+                    <li><a href="#about" class="navbar-link"> About</a></li>
+                    <li><a href="#service" class="navbar-link"> Services
+                        </a></li>
+                    <li><a href="#contact" class="btn navbar-btn">Let's
+                            talk</a></li>
                 </ul>
+            </nav>
+            <div class="mobile-navbar-btn">
+                <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+                <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
             </div>
-            <div class="copy-rigth">
-                <p class="para">© 2024. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </header>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="index.js"></script>
-</body>
+        <main>
+            <section class="section home" id="home">
+                <div class="container grid grid-two-column">
+                    <div class="hero-data">
+                        <h1 class="primary-heading">Embark on your cloud journey
+                            with Skydock.</h1>
+                        <p class="para">Empowering Success, Elevating
+                            Businesses: Your Cloud Journey, Our Expertise.</p>
+                    </div>
+                    <!-- right side hero section  -->
+                    <div class="hero-image">
+                        <img src="images/cloud operations.png"
+                            alt="we love coding and want to learn coding"
+                            class="image" />
+                    </div>
+                </div>
+            </section>
 
-</html>
+            <section class="section section-about" id="about">
+                <div class="container about-container">
+                    <h1 class="primary-heading">About Us</h1>
+                    <p class="para">Welcome to Skydock, your trusted partner in
+                        cloud consulting solutions. We take pride in our
+                        commitment to delivering cutting-edge solutions that
+                        elevate your business to new heights. With a track
+                        record of successfully completing complex projects, we
+                        stand as a testament to our expertise and
+                        dedication.</p>
+
+                    <p class="para">At Skydock, we understand the dynamic nature
+                        of the tech landscape, and our team of skilled
+                        professionals is equipped to navigate the complexities
+                        of cloud technology with precision. From strategic
+                        planning to seamless execution, we are committed to
+                        providing top-notch consulting services that align with
+                        your business goals.</p>
+
+                    <p class="para">Our journey is defined by a passion for
+                        innovation, a customer-centric approach, and a
+                        relentless pursuit of excellence. We leverage our deep
+                        industry knowledge and technical expertise to empower
+                        your organization with scalable and efficient cloud
+                        solutions.</p>
+
+                    <p class="para">As your technology partner, we are dedicated
+                        to driving your success in the digital era. Explore the
+                        possibilities with Skydock, where innovation meets
+                        reliability, and your vision becomes our mission.</p>
+
+                    <p class="para">Welcome to a future where your business
+                        thrives, powered by Skydock.</p>
+                </div>
+            </section>
+
+            <section class="section section-service" id="service">
+                <div class="container grid">
+                    <h1 class="primary-heading">Services</h1>
+                </div>
+
+                <div class="container grid grid-three-column">
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="cloud-upload-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Cloud Migration</a>
+                            </h2>
+
+                            <p class="para">Seamlessly transition from legacy
+                                systems to the cloud with our proven migration
+                                services. Whether it's rehosting, refactoring,
+                                or rearchitecting, we ensure a smooth migration
+                                process, minimizing downtime and optimizing
+                                performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="construct-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Platform</a>
+                            </h2>
+
+                            <p class="para">Our experts conduct thorough
+                                assessments of your current infrastructure,
+                                applications, and processes to formulate a
+                                tailored modernization strategy.We work closely
+                                with your team to identify key business
+                                objectives and align modernization efforts with
+                                your overall goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="rocket-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Architecting on
+                                    cloud </a>
+                            </h2>
+
+                            <p class="para">Create architectures that can scale
+                                dynamically to meet changing demands. Our
+                                designs prioritize resilience, ensuring high
+                                availability, fault tolerance, and disaster
+                                recovery for mission-critical applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="contract-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Containerization
+                                </a>
+                            </h2>
+
+                            <p class="para">Transform your monolithic
+                                applications into microservices with our
+                                containerization expertise. Collaborate with our
+                                experienced consultants to understand the unique
+                                needs of your applications and formulate a
+                                containerization strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="git-compare-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Serverless
+                                    Computing</a>
+                            </h2>
+
+                            <p class="para">Leverage the full potential of
+                                serverless computing with AWS Lambda and other
+                                serverless offerings. Our experts guide you
+                                through the process of breaking down monolithic
+                                applications into granular, serverless functions
+                                for optimal scalability and efficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="infinite-outline"></ion-icon>
+
+                            <h2 class id="h-devops-security">
+                                <a href="javascript:void(0)">DevOps & Security
+                                </a>
+                            </h2>
+
+                            <p class="para">Accelerate development and
+                                deployment cycles with our DevOps and automation
+                                solutions. Embrace continuous integration and
+                                continuous delivery (CI/CD) practices,
+                                streamline workflows, and enhance collaboration
+                                between development and operations teams.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="medical-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Kubernetes</a>
+                            </h2>
+
+                            <p class="para">Focus on innovation while we handle
+                                the operational complexities of managing
+                                Kubernetes clusters. Leverage our in-depth
+                                knowledge to craft a Kubernetes strategy
+                                tailored to your business objectives.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="business-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Infrastructure as
+                                    Code</a>
+                            </h2>
+
+                            <p class="para">Whether it's Terraform or AWS
+                                CloudFormation, we help you implement the
+                                best-fit tools for your infrastructure
+                                automation journey. Our skilled engineers create
+                                bespoke Infrastructure as Code scripts and
+                                templates based on your specific
+                                requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="hero-icon-style">
+                            <ion-icon class="icon"
+                                name="calculator-outline"></ion-icon>
+
+                            <h2 class>
+                                <a href="javascript:void(0)">Cloud Cost
+                                    Optimization</a>
+                            </h2>
+
+                            <p class="para">Begin your cost optimization journey
+                                with a comprehensive analysis of your current
+                                cloud expenditure. Our experts conduct a
+                                thorough assessment to identify areas of
+                                overspending, unused resources, and potential
+                                savings opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-contact" id="contact">
+                <div class="container">
+                    <h1 class="primary-heading">Let's talk</h1>
+                </div>
+                <div class="container grid grid-two-column">
+                    <div class="contact-content">
+                        <p class="para">Looking to create a new cloud
+                            application? Or do you need to migrate and modernize
+                            your legacy software to the cloud? Through our
+                            partnership with AWS, we bring the expertise, the
+                            process-driven approach, and the dedication needed
+                            to build things right, right now and we’d love to
+                            hear from you.</p>
+
+                        <p class="para para-special">To get the conversation
+                            started, introduce yourself..!</p>
+
+                        <p class="para">Tell us a little bit about your company
+                            and what you need help with, and we’ll get back to
+                            you as soon as possible.</p>
+                    </div>
+
+                    <div class="form-content">
+                        <div class="form-container">
+                            <form id="contact-form"
+                                action="mailto:someone@example.com"
+                                method="post" enctype="text/plain">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name"
+                                    placeholder="Your name." required>
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"
+                                    placeholder="Your Email." required>
+
+                                <label for="number">Number</label>
+                                <input type="text" id="number" name="number"
+                                    placeholder="Your Number." required>
+
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Write something." required
+                                    rows="5"></textarea>
+
+                                <a href="javascript:void(0)" type="submit"
+                                    class="btn" id="send-message-btn">Send
+                                    Message</a>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer" class="footer section-standard-navigation">
+                <div class="footer-top container grid grid-two-column">
+                    <div class="footer-content">
+                        <a href="https://www.linkedin.com/in/aarshvb/"
+                            target="_blank" class="contact-wrap">
+                            <ion-icon class="linked-in"
+                                name="logo-linkedin"></ion-icon>
+                            <span class>Let’s Connect.</span>
+                        </a>
+
+                        <a href="https://wa.me/9712095676" target="_blank"
+                            class="contact-wrap">
+                            <ion-icon name="call-outline"
+                                class="tele-icon"></ion-icon>
+                            <span class>+91-9712095676</span>
+                        </a>
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#service">Services</a>
+                                <a href="#contact">Let's talk</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copy-rigth">
+                        <p class="para">© 2024. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+                crossorigin="anonymous"></script>
+            <script type="module"
+                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule
+                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script src="index.js"></script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        </body>
+
+    </html>

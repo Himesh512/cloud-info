@@ -24,25 +24,55 @@ $(window).on("scroll", function (event) {
     }
 });
 
-const getContent = (formData) => {
-    return "Testing";
+const getContent = (formValue) => {
+
+    return `<div style=" display: flex; justify-content: center; align-items: center; background: rgb(243,243,243); background: radial-gradient(circle, rgba(243,243,243,1) 50%, rgba(163,163,163,1) 100%); ">
+        <div style=" min-width: 40rem; background: #ffffff; padding: 3rem; font-size: 1.2rem; margin: 15rem; border: 1px solid #ededed; box-shadow: 0px 3px 5px 1px #d3d3d3;">
+            <h3 style="padding: 1.5rem 0;">${formValue.name}</h3>
+            <ul style=" list-style: none; margin-bottom: 0; padding-inline-start: 0;">
+                <li style="padding: 0.8rem 0;">
+                    <span style="min-width: 130px;display: inline-block;">
+                        <strong>Number:</strong>
+                    </span>
+                    <span>${formValue.number}</span>
+                </li>
+                
+                <li style="padding: 0.8rem 0;">
+                    <span style="min-width: 130px; display: inline-block; ">
+                        <strong>Email:</strong>
+                    </span>
+                    <span>${formValue.email}</span>
+                </li>
+
+                <li style="padding: 0.8rem 0;">
+                    <span style="min-width: 130px; display: inline-block;">
+                        <strong>Message:</strong>
+                    </span>
+                    <span>${formValue.message}</span>
+                </li>
+            </ul>    
+        </div>
+    </div>`;
 };
 
 const submitInquiryForm = () => {
-    const formData = document.getElementById("contact-form");
+    const form = document.getElementById("contact-form");
 
-    if (!formData.checkValidity()) {
+    if (!form.checkValidity()) {
         alert("Please fill up Mendatory data...!")
     }
 
+
+    const formValueObj = new FormData(form);
+    const formValue = Object.fromEntries(formValueObj);
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "info@skydocktech.com",
-        Password: "BBBE45B950A1DF19A682ABAA8AFC7287CBF6",
+        Username: "dev.himesh512@gmail.com",
+        Password: "8981113356BFAE827B78880583FA09CC01AC",
         To: 'info@skydocktech.com',
-        From: "query@skydocktech.com",
-        Subject: "New Inquiry",
-        Body: getContent(formData)
+        From: "dev.himesh512@gmail.com",
+        Subject: `New Inquiry ${formValue.number} `,
+        Body: getContent(formValue)
     }).then(
         message => alert(message)
     );
