@@ -73,9 +73,26 @@ const submitInquiryForm = () => {
         From: "dev.himesh512@gmail.com",
         Subject: `New Inquiry ${formValue.number} `,
         Body: getContent(formValue)
-    }).then(
-        message => alert(message)
-    );
+    }).then((message) => {
+        // message => alert(message)
+        let container$ = document.getElementsByClassName('contact-content');
+        if (message === "OK") {
+            let successText$ = container$[0].getElementsByClassName('success-text')[0];
+            successText$.style.display = 'block';
+            setTimeout(() => {
+                successText$.style.display = 'none';
+            }, 4500);
+            form.reset();
+        } else {
+            let errorText$ = container$[0].getElementsByClassName('error-text')[0];
+            errorText$.style.display = 'block';
+            errorText$.innerText = message;
+            setTimeout(() => {
+                errorText$.style.display = 'none';
+                errorText$.innerText = 'Error occurred for sent Inquiry, Please try again';
+            }, 4500);
+        }
+    });
 };
 
 
