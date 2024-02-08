@@ -59,7 +59,12 @@ const submitInquiryForm = () => {
     const form = document.getElementById("contact-form");
 
     if (!form.checkValidity()) {
-        alert("Please fill up Mendatory data...!")
+        let validationText$ = container$[0].getElementsByClassName('validation-text')[0];
+        validationText$.style.display = 'block';
+        setTimeout(() => {
+            validationText$.style.display = 'none';
+        }, 4500);
+        return;
     }
 
 
