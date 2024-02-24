@@ -72,10 +72,10 @@ const submitInquiryForm = () => {
     const formValue = Object.fromEntries(formValueObj);
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "dev.himesh512@gmail.com",
-        Password: "8981113356BFAE827B78880583FA09CC01AC",
+        Username: "skydockinfo@gmail.com",
+        Password: "4602AB69E77F18C0B84F00AF7036FB63FC31",
         To: 'info@skydocktech.com',
-        From: "dev.himesh512@gmail.com",
+        From: "skydockinfo@gmail.com",
         Subject: `New Inquiry ${formValue.number} `,
         Body: getContent(formValue)
     }).then((message) => {
