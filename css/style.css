@@ -488,6 +488,8 @@
     .section-standard-navigation .footer-content {
         color: var(--white);
         font-size: 1.6rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .lable-text {
@@ -647,7 +649,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .container {
             max-width: 96rem;
         }
