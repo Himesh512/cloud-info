@@ -774,6 +774,10 @@
         .footer-nav {
             justify-content: center;
         }
+
+        .footer-row {
+            justify-content: center;
+        }
     }
 
     @media(min-width: 1200px) {
