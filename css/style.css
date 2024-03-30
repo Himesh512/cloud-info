@@ -785,3 +785,32 @@
             max-width: 88.5vw;
         }
     }
+
+    @media (max-width: 630px) {
+        .footer-content a {
+            justify-content: flex-start;
+        }
+
+        .section-standard-navigation .footer-content {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .section-standard-navigation .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer-nav {
+            justify-content: center;
+        }
+
+        .footer-nav li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
