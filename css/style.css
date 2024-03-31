@@ -814,3 +814,9 @@
             justify-content: center;
         }
     }
+
+    @media (max-width: 425px) {
+        .footer-content a {
+            justify-content: center;
+        }
+    }
